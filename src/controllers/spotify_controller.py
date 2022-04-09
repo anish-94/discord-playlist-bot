@@ -12,7 +12,7 @@ playlist_modify_auth_manager = SpotifyOAuth(
     # scope="playlist-modify-public"
 )
 
-BOT_PLAYLIST_ID = '0grsGacOeqZBdtJQU0KXJD'
+BOT_PLAYLIST_ID = os.getenv('PLAYLIST_ID')
 
 class SpotifyController:
     def __init__(self, auth_manager=playlist_modify_auth_manager):
